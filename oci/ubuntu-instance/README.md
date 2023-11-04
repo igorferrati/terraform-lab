@@ -2,7 +2,7 @@
 
 ### Overview Architecture
 * VCN
-* Subrede
+* Subnet
 * Internet Gateway
 * Route Table (default)
 * Instance
