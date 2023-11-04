@@ -10,7 +10,7 @@
 ### Variables Provider
 
 | Variable | Default Value | Description |
-| :---:|:---:|---: |
+| :---:|:---:|:---: |
 | ```tenancy_ocid```| xxx| tenancy ocid |
 | ```user_ocid```| xxx| user ocid |
 | ```private_key_path```| xxx| private key oci path|
