@@ -1,0 +1,14 @@
+### Terraform ###
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+.terraform*
+
+### keys ###
+*.pem
+.vscode
+*keys
+ssh-key
