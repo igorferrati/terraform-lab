@@ -30,7 +30,7 @@ resource "oci_core_internet_gateway" "test_internet_gateway" {
 resource "oci_core_route_table" "estudo_route_table" {
     compartment_id = var.compartment_id
     display_name = "estudo-route-table"
-    vcn_id = oci_core_vcn.rede-estudo
+    vcn_id = oci_core_vcn.rede-estudo.id
 
     route_rules {
         destination       = "0.0.0.0/0"
