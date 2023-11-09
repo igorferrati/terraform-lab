@@ -71,3 +71,9 @@ variable "public_subnet_name" {
   type = string
   default = "value"
 }
+
+#security lists
+variable "security_list_display_name" {
+  type = string
+  default = "security_list"
+}
