@@ -10,6 +10,10 @@ resource "oci_core_instance" "test_instance" {
       assign_public_ip = true
     }
 
+    source_details {
+        source_id = "ocid1.image.oc1.sa-saopaulo-1.aaaaaaaaqovdb2vta3eezru22h2khupvxgjee6aozwb776fptwb3jsnnxntq"
+        source_type = "image"
+    }
     # shape_config {
     #   memory_in_gbs = ""
     #   ocpus         = ""
