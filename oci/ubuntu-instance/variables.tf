@@ -1,22 +1,27 @@
 #provider setup
 variable "tenancy_ocid" {
   type = string
-  default = "ocid1.tenancy.oc1..xxxxxxxxxxxxxxxx"
+  sensitive = true
 }
 
 variable "user_ocid" {
   type = string
-  default = "ocid1.user.oc1..xxxxxxxxxxxxxxxx"
-}
-
-variable "private_key_path" {
-  type = string
-  default = "/home/igor/projects/terraform-lab/oci/oci-keys/igorferrati@gmail.com_2023-11-03T13_12_43.596Z.pem"
+  sensitive = true
 }
 
 variable "fingerprint" {
   type = string
-  default = "b7:0f:1b:e1:0a:a4xxxxxxxxxxxxx"
+  sensitive = true
+}
+
+variable "private_key_path" {
+  type = string
+  sensitive = true
+}
+
+variable "compartment_id" {
+  type = string
+  sensitive = true
 }
 
 variable "region" {
@@ -28,11 +33,6 @@ variable "region" {
 variable "instance_availability_domain" {
   type = string
   default = "DCJC:SA-SAOPAULO-1-AD-1"
-}
-
-variable "compartment_id" {
-  type = string
-  default = "ocid1.compartment.oc1..xxxxxxxxxxxxxxxxx"
 }
 
 variable "instance_shape" {
@@ -47,7 +47,7 @@ variable "instance_display_name" {
 
 variable "ssh_public_key" {
   type = string
-  default = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAxxxxxxxxxxxxxxxxxxx"
+  sensitive = true
 }
 
 #VCN
